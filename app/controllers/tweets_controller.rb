@@ -70,7 +70,7 @@ class TweetsController < ApplicationController
       redirect to '/login'
     end
   end
-  
+
   delete '/tweets/:id/delete' do
     @tweet = Tweet.find_by_id(params[:id])
     redirect to '/tweets'
